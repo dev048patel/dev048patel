@@ -1,10 +1,25 @@
-- 👋 Hi, I’m @dev048patel
-- 👀 I’m interested in ... Mobile Applications, Web development & Artificial Intelligence 
-- 🌱 I’m currently learning ... Node.js, Express.js, and MongoDB to build full-stack applications with secure authentication, clean architecture, and API deployment.
-- 🔄 I'm also exploring backend integration with React, using tools like Postman, JWT, and platforms like Render for deployment.  
-- 💞️ I’m looking to collaborate on ... Seeking collaborations in  android mobile app development to enhance skills and engage in hands-on projects
-- 📫 How to reach me ... with my email address " p.p.dev2004@gmail.com "
-<!---
-dev048patel/dev048patel is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+# 👋 Hey there, I'm Dev Patel!
+
+🧠 Passionate about building cool things with **code, AI, and creativity.**  
+💻 Currently cooking up projects in **Node.js, Express, MongoDB** — and adding 🔥 with **React, Postman, and JWT.**  
+📱 Big fan of **mobile apps**, clean UI, and seamless backend integrations.
+
+---
+
+## 🚧 What I’m Up To
+
+- 🛠 Learning: Full-stack dev with secure auth & REST APIs  
+- ⚙️ Exploring: Backend + AI + React + Render Deployments  
+- 🤝 Open to: Android app collabs, open-source projects, hackathons  
+
+---
+
+## 💌 Let’s Connect!
+
+📬 Email me: **p.p.dev2004@gmail.com**  
+🌐 GitHub: [@dev048patel](https://github.com/dev048patel)
+
+---
+
+> *"Building one line of code at a time, breaking it twice as fast 😄"*
+
