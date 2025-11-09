@@ -17,7 +17,8 @@
 ## 💌 Let’s Connect!
 
 📬 Email me: **p.p.dev2004@gmail.com**  
-🌐 GitHub: [@dev048patel](https://github.com/dev048patel)
+🎨 Portfolio: **[dev-patel-portfolio-yhebfl1.gamma.site](https://dev-patel-portfolio-yhebfl1.gamma.site)**<br>
+🌐 GitHub: **[@dev048patel](https://github.com/dev048patel)**
 
 ---
 
