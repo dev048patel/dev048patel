@@ -1,5 +1,4 @@
-# 💫 About Me
-
+# <p align="center">✨ Dev Patel</p>
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Dev%20Patel&fontSize=80&animation=fadeIn" />
 </p>
@@ -11,7 +10,7 @@ I am a Computer Science student based in **Regina, SK**, dedicated to crafting s
 ---
 
 ### 🚀 The Quick Bits
-- 🎓 **Education:** Pursuing Computer Science with a deep interest in Data Structures, Algorithms, and System Design.
+- 🎓 **Education:** Pursuing Computer Science with a focus on Data Structures, Algorithms, and System Design.
 - 🏗️ **Current Focus:** Scaling **CourseFlow**, a comprehensive management platform for university students.
 - 🚍 **Latest Launch:** **GoTransit Regina**, a real-time transit tracking solution for the local community.
 - 🎨 **Design Philosophy:** Big fan of Glassmorphism, interactive UI, and "breaking things" to understand how they work.
@@ -20,27 +19,23 @@ I am a Computer Science student based in **Regina, SK**, dedicated to crafting s
 ---
 
 ### 🧪 Tech Stack & Toolbox
+I've spent my time mastering tools across the entire stack—from building responsive interfaces to designing scalable database schemas.
 
-<details>
-  <summary><b>View My Tech Arsenal 🖱️</b></summary>
-  <br/>
-
-| Category | Tools |
-| :--- | :--- |
-| **Frontend** | ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) |
-| **Backend** | ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white) |
-| **Database** | ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white) |
-| **DevOps & Tools** | ![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) |
-
-</details>
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,nodejs,express,mongodb,postgres,supabase,prisma,py,fastapi,cpp,java,git,postman,render" />
+</p>
 
 ---
 
-### 📊 GitHub Analytics
+### 🌊 Flow & Activity
+> *"Consistency is the quietest form of excellence."*
 
 <p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=dev048patel&show_icons=true&theme=tokyonight&count_private=true" />
-  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=dev048patel&theme=tokyonight" />
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=dev048patel&bg_color=ffffff00&color=70a1ff&line=70a1ff&point=70a1ff&area=true&hide_border=true" />
+</p>
+
+<p align="center">
+  <img src="https://github-user-contribution-snake.vercel.app/api/github-contribution-grid-snake.svg?github_user_name=dev048patel&outputs=svg" alt="snake" />
 </p>
 
 ---
@@ -49,17 +44,17 @@ I am a Computer Science student based in **Regina, SK**, dedicated to crafting s
 
 #### 🎓 [CourseFlow](https://github.com/dev048patel/CourseFlow)
 *A full-stack ecosystem for students.*
-- **Stack:** Next.js, Prisma, Supabase.
+- **Stack:** Next.js, Prisma, Supabase, FastAPI.
 - **Key Feature:** Interactive dashboards and centralized academic tracking with a focus on modern UI aesthetics.
 
 #### 🚍 [GoTransit Regina](https://github.com/dev048patel/GoTransit-Regina)
 *Real-time bus tracking application.*
-- **Stack:** Node.js, REST APIs.
+- **Stack:** Node.js, REST APIs, UI/UX Design.
 - **Impact:** Solving real-world transit navigation issues for Regina residents.
 
 ---
 
-### 📫 Connect with Me
+### 📫 Let's Connect!
 
 <p align="left">
 <a href="mailto:p.p.dev2004@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
