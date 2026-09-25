@@ -1,65 +1,40 @@
-# <p align="center">✨ Dev Patel</p>
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Dev%20Patel&fontSize=80&animation=fadeIn" />
-</p>
-
-### 👨‍💻 Full-Stack Developer | UI/UX Enthusiast | CS Student
-
-I am a Computer Science student based in **Regina, SK**, dedicated to crafting seamless digital experiences. I sit at the intersection of **robust backend logic** and **modern, interactive frontend design**. My work focuses on building scalable full-stack applications with a particular love for clean aesthetics and smooth animations.
-
----
-
-### 🚀 The Quick Bits
-- 🎓 **Education:** Pursuing Computer Science with a focus on Data Structures, Algorithms, and System Design.
-- 🏗️ **Current Focus:** Scaling **CourseFlow**, a comprehensive management platform for university students.
-- 🚍 **Latest Launch:** **GoTransit Regina**, a real-time transit tracking solution for the local community.
-- 🎨 **Design Philosophy:** Big fan of Glassmorphism, interactive UI, and "breaking things" to understand how they work.
-- 🛠️ **Dev Workflow:** Transitioning from "it works on my machine" to automated Render deployments and secure JWT-based auth systems.
-
----
-
-### 🧪 Tech Stack & Toolbox
-I've spent my time mastering tools across the entire stack—from building responsive interfaces to designing scalable database schemas.
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,nodejs,express,mongodb,postgres,supabase,prisma,py,fastapi,cpp,java,git,postman,render" />
-</p>
-
----
-
-### 🌊 Flow & Activity
-> *"Consistency is the quietest form of excellence."*
-
-<p align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=dev048patel&bg_color=ffffff00&color=70a1ff&line=70a1ff&point=70a1ff&area=true&hide_border=true" />
+  <a href="https://gotransitregina.ca">
+    <img src="./assets/header.svg" width="100%" alt="Dev Patel — full-stack apps that real people use" />
+  </a>
 </p>
 
 <p align="center">
-  <img src="https://github-user-contribution-snake.vercel.app/api/github-contribution-grid-snake.svg?github_user_name=dev048patel&outputs=svg" alt="snake" />
+  <a href="https://github.com/dev048patel/GoTransit">
+    <img src="./assets/stack.svg" width="100%" alt="One tap on GoTransit runs through React, Express and Supabase" />
+  </a>
 </p>
 
----
-
-### 🌟 Featured Projects
-
-#### 🎓 [CourseFlow](https://github.com/dev048patel/CourseFlow)
-*A full-stack ecosystem for students.*
-- **Stack:** Next.js, Prisma, Supabase, FastAPI.
-- **Key Feature:** Interactive dashboards and centralized academic tracking with a focus on modern UI aesthetics.
-
-#### 🚍 [GoTransit Regina](https://github.com/dev048patel/GoTransit-Regina)
-*Real-time bus tracking application.*
-- **Stack:** Node.js, REST APIs, UI/UX Design.
-- **Impact:** Solving real-world transit navigation issues for Regina residents.
-
----
-
-### 📫 Let's Connect!
-
-<p align="left">
-<a href="mailto:p.p.dev2004@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-<a href="https://dev-patel-6xbdpsl.gamma.site"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white" /></a>
-<a href="https://linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<p align="center">
+  <a href="https://github.com/dev048patel/GoTransit"><img src="./assets/loop.svg" width="49%" alt="GoTransit live-tracking loop" /></a>
+  <a href="https://github.com/dev048patel/dmarc-translate"><img src="./assets/cells.svg" width="49%" alt="dmarc-translate: 69 of 100 domains have no real DMARC" /></a>
 </p>
 
-> *"Building one line of code at a time, breaking it twice as fast 😄"*
+<p align="center">
+  <a href="https://github.com/dev048patel/dmarc-translate"><img src="./assets/meters.svg" width="49%" alt="GoTransit is live; dmarc-translate is in phase 2 of 5" /></a>
+  <a href="https://github.com/dev048patel?tab=repositories"><img src="./assets/dots.svg" width="49%" alt="Most builds pass, a few wobble, one broke prod" /></a>
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=ts,react,nextjs,tailwind,nodejs,express,py,fastapi,postgres,supabase,prisma,mongodb,java,cpp,git,postman&theme=dark&perline=16" alt="Tech stack" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=dev048patel&bg_color=101215&color=7a818c&title_color=f5a524&line=f5a524&point=4ade80&area=true&area_color=f5a524&hide_border=true&custom_title=commits%20·%20last%2030%20days" width="100%" alt="Contribution graph" />
+</p>
+
+<p align="center">
+  <img src="./assets/footer.svg" width="100%" alt="the degree takes four years — the product gets better every time someone uses it" />
+</p>
+
+<p align="center">
+  <a href="mailto:p.p.dev2004@gmail.com"><img src="https://img.shields.io/badge/email-101215?style=for-the-badge&logo=gmail&logoColor=f5a524" /></a>
+  <a href="https://www.linkedin.com/in/dev-patel-itsme"><img src="https://img.shields.io/badge/linkedin-101215?style=for-the-badge&logo=linkedin&logoColor=38bdf8" /></a>
+  <a href="https://dev-patel-6xbdpsl.gamma.site"><img src="https://img.shields.io/badge/portfolio-101215?style=for-the-badge&logo=aboutdotme&logoColor=4ade80" /></a>
+  <a href="https://gotransitregina.ca"><img src="https://img.shields.io/badge/gotransitregina.ca-101215?style=for-the-badge&logo=googlemaps&logoColor=ef4444" /></a>
+</p>
