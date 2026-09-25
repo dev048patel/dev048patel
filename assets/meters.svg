@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="310" viewBox="0 0 420 310" role="img" aria-label="GoTransit has 116 commits; dmarc-translate is in phase 2 of 5">
+<title>GoTransit has 116 commits; dmarc-translate is in phase 2 of 5</title>
+<style>
+text{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}
+.cap{font-size:9px;letter-spacing:1.4px;font-weight:700}
+.dim{fill:#7a818c}
+.blink{animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+
+.prog{transform-box:fill-box;transform-origin:left;animation:prog 5s cubic-bezier(.3,.7,.2,1) infinite}
+@keyframes prog{0%{transform:scaleX(0)}70%,100%{transform:scaleX(1)}}
+.dot{animation:pulse 1.4s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.25}}
+.full{transform-box:fill-box;transform-origin:left;animation:full 1.4s cubic-bezier(.2,.8,.2,1) both}
+@keyframes full{from{transform:scaleX(0)}}
+</style>
+
+<defs>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="6"/>
+  </filter>
+  <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff" stop-opacity=".035"/>
+    <stop offset=".35" stop-color="#ffffff" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<rect width="420" height="310" rx="12" fill="#0b0c0e"/>
+<rect x="1" y="1" width="418" height="308" rx="11" fill="#101215" stroke="#23272e"/><rect x="1" y="1" width="418" height="308" rx="11" fill="url(#sheen)"/><rect x="1" y="24" width="2" height="262" fill="#f5a524" opacity=".55"/><text x="406" y="300" text-anchor="end" font-size="64" font-weight="800" fill="#fff" opacity=".035">04</text><rect x="18" y="18" width="61.8" height="14" rx="3" fill="#f5a524" fill-opacity=".12" stroke="#f5a524" stroke-opacity=".8"/><text x="24" y="28" font-size="7.5" font-weight="700" fill="#f5a524" letter-spacing=".3">THE METERS</text><text x="87.75" y="28" class="cap dim" font-size="7.5">ONE SHIPS, ONE CLIMBS</text><rect x="314.6" y="15" width="87.4" height="18" rx="4" fill="#f5a524" fill-opacity=".1" stroke="#f5a524"/><text x="358.3" y="28" text-anchor="middle" font-size="8.5" font-weight="700" fill="#f5a524">1 live · 1 wip</text><text x="18" y="56" font-size="14" font-weight="700" fill="#e8e8e8">One is live · one is still climbing</text><rect x="18" y="66" width="251.9" height="14" rx="3" fill="none" stroke="#f5a524" stroke-opacity=".8"/><text x="24" y="76" font-size="7.5" font-weight="700" fill="#f5a524" letter-spacing=".3">the right bar climbs one phase at a time, 5 total</text><text x="20" y="104" class="cap" fill="#f5a524" font-size="9.5">TWO METERS · ONE LIVE, ONE CLIMBING</text><rect x="20" y="116" width="182" height="104" rx="8" fill="#f5a524" fill-opacity=".06" stroke="#f5a524" stroke-opacity=".55"/><text x="32" y="136" class="cap" fill="#f5a524" font-size="9">GOTRANSIT</text><text x="190" y="136" text-anchor="end" font-size="8.5" font-weight="700" fill="#f5a524">live</text><text x="32" y="150" font-size="8" class="dim">react · express · supabase</text><text x="32" y="192" font-size="30" font-weight="800" fill="#f5a524" filter="url(#glow)">116</text><text x="92" y="192" font-size="9" class="dim">commits</text><rect x="32" y="204" width="158" height="4" rx="2" fill="#2a2418"/><rect class="full" x="32" y="204" width="158" height="4" rx="2" fill="#f5a524"/><rect x="216" y="116" width="184" height="104" rx="8" fill="#38bdf8" fill-opacity=".07" stroke="#38bdf8" stroke-opacity=".6"/><text x="228" y="136" class="cap" fill="#38bdf8" font-size="9">DMARC-TRANSLATE</text><circle class="dot" cx="386" cy="132" r="3.5" fill="#38bdf8"/><text x="228" y="150" font-size="8" class="dim">python · parsedmarc · sqlite</text><text x="228" y="192" font-size="26" font-weight="800" fill="#38bdf8" filter="url(#glow)">phase 2</text><text x="352" y="192" font-size="9" class="dim">of 5</text><rect x="228.0" y="204" width="28.6" height="4" rx="2" fill="#38bdf8"/><rect x="259.6" y="204" width="28.6" height="4" rx="2" fill="#132530"/><rect class="prog" x="259.6" y="204" width="28.6" height="4" rx="2" fill="#38bdf8" fill-opacity=".6"/><rect x="291.2" y="204" width="28.6" height="4" rx="2" fill="#132530"/><rect x="322.8" y="204" width="28.6" height="4" rx="2" fill="#132530"/><rect x="354.4" y="204" width="28.6" height="4" rx="2" fill="#132530"/><text x="20" y="246" font-size="10" fill="#e8e8e8">the left one is live at gotransitregina.ca</text><text x="20" y="262" font-size="10" fill="#38bdf8">now building: report ingestion pipeline</text><text x="210.0" y="296" text-anchor="middle" font-size="8.5" class="dim" opacity=".8">and when phase 2 lands, the bar starts climbing again</text>
+</svg>
