@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://gotransitregina.ca">
+  <a href="https://transitregina.ca">
     <img src="./assets/header.svg" width="100%" alt="Dev Patel — full-stack apps that real people use" />
   </a>
 </p>
@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://gotransitregina.ca"><img src="./assets/proj-gotransit.svg" width="49%" alt="GoTransit — live buses for Regina, SK" /></a>
+  <a href="https://transitregina.ca"><img src="./assets/proj-gotransit.svg" width="49%" alt="GoTransit — live buses for Regina, SK" /></a>
   <a href="https://github.com/dev048patel/dmarc-translate"><img src="./assets/proj-dmarc.svg" width="49%" alt="dmarc-translate — who's faking your email" /></a>
 </p>
 
@@ -46,5 +46,5 @@
   <a href="mailto:p.p.dev2004@gmail.com"><img src="https://img.shields.io/badge/email-101215?style=for-the-badge&logo=gmail&logoColor=f5a524" /></a>
   <a href="https://www.linkedin.com/in/dev-patel-itsme"><img src="https://img.shields.io/badge/linkedin-101215?style=for-the-badge&logo=linkedin&logoColor=38bdf8" /></a>
   <a href="https://dev-patel-6xbdpsl.gamma.site"><img src="https://img.shields.io/badge/portfolio-101215?style=for-the-badge&logo=googlechrome&logoColor=4ade80" /></a>
-  <a href="https://gotransitregina.ca"><img src="https://img.shields.io/badge/gotransitregina.ca-101215?style=for-the-badge&logo=googlemaps&logoColor=ef4444" /></a>
+  <a href="https://transitregina.ca"><img src="https://img.shields.io/badge/transitregina.ca-101215?style=for-the-badge&logo=googlemaps&logoColor=ef4444" /></a>
 </p>
