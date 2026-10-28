@@ -20,7 +20,7 @@ FIX = re.compile(r"\b(fix|fixes|fixed|fixing|bug|bugs|patch|typo|oops|hotfix|twe
 BREAK = re.compile(r"\b(revert|reverted|rollback|roll back|broke|broken|hotfix|urgent|emergency)\b", re.I)
 
 DEFAULTS = {
-    "gotransit_commits": 116,
+    "gotransit_commits": 200,
     "site_live": True,
     "phase_current": 2,
     "phase_total": 5,
@@ -31,10 +31,14 @@ DEFAULTS = {
     "live": False,
     # per-project stats; public=False means the repo isn't on GitHub yet
     "repos": {
-        "GoTransit": {"public": True, "commits": 116, "days": None},
-        "dmarc-translate": {"public": True, "commits": 9, "days": None},
-        "AI-Finance": {"public": True, "commits": None, "days": None},
-        "AI-generate-code-reviewer": {"public": False, "commits": 0, "days": None},
+        # last-known-good numbers: only used when the live lookup fails
+        "TransitRegina": {"public": True, "commits": 200, "days": None, "stars": 2},
+        "courseflow": {"public": True, "commits": 187, "days": None, "stars": 2},
+        "dmarc-translate": {"public": True, "commits": 9, "days": None, "stars": 2},
+        "AI-Finance": {"public": True, "commits": 9, "days": None, "stars": 0},
+        "AI-generate-code-reviewer": {"public": False, "commits": 0, "days": None, "stars": 0},
+        "Python-Graph": {"public": True, "commits": 2, "days": None, "stars": 0},
+        "Node.js": {"public": True, "commits": None, "days": None, "stars": 0},
     },
 }
 
@@ -64,11 +68,12 @@ def repo_stats(name):
         info, _ = _json(f"https://api.github.com/repos/{USER}/{name}")
     except urllib.error.HTTPError as e:
         if e.code == 404:
-            return {"public": False, "commits": 0, "days": None}
+            return {"public": False, "commits": 0, "days": None, "stars": 0}
         raise
     pushed = datetime.fromisoformat(info["pushed_at"].replace("Z", "+00:00"))
     return {"public": True, "commits": commit_count(name),
-            "days": (datetime.now(timezone.utc) - pushed).days}
+            "days": (datetime.now(timezone.utc) - pushed).days,
+            "stars": info.get("stargazers_count", 0)}
 
 
 def site_live():
@@ -123,7 +128,7 @@ def gather():
     if os.environ.get("PROFILE_OFFLINE"):  # local previews without network
         return d
     steps = {
-        "gotransit_commits": lambda: commit_count("GoTransit"),
+        "gotransit_commits": lambda: commit_count("TransitRegina"),
         "site_live": site_live,
     }
     for key, fn in steps.items():
