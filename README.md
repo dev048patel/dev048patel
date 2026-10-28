@@ -32,7 +32,7 @@
 
 <p align="center">
   <a href="https://github.com/dev048patel?tab=repositories">
-    <img src="./assets/stats.svg" width="100%" alt="Project stats: GoTransit 116 commits and live, CourseFlow 187 commits and building, dmarc-translate 9 commits at phase 2 of 5, AI-Finance 9 commits and built, AI code reviewer in progress. 321 commits and 6 stars in total." />
+    <img src="./assets/stats.svg" width="100%" alt="Project stats: GoTransit 200 commits and live, CourseFlow 187 commits and building, dmarc-translate 9 commits at phase 2 of 5, AI-Finance 9 commits and built, AI code reviewer in progress. 405 commits and 6 stars in total." />
   </a>
 </p>
 
