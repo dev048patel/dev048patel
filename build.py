@@ -12,6 +12,7 @@ FONT = "ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',m
 BG, PANEL, LINE = "#0b0c0e", "#101215", "#23272e"
 TXT, DIM, FAINT = "#e8e8e8", "#7a818c", "#3a3f47"
 AMBER, GREEN, CYAN, RED, VIOLET, TEAL = "#f5a524", "#4ade80", "#38bdf8", "#ef4444", "#a78bfa", "#2dd4bf"
+PINK, YELLOW = "#f472b6", "#fbbf24"
 
 BASE_CSS = """
 text{font-family:%s}
@@ -259,6 +260,16 @@ def pixel_code(cx, cy, px=3.4):
             f'stroke="{TXT}" stroke-width="{px*.8:.1f}"/><line x1="{ox+8.3*px:.1f}" y1="{oy+8.3*px:.1f}" '
             f'x2="{ox+11*px:.1f}" y2="{oy+11*px:.1f}" stroke="{TXT}" stroke-width="{px*1.1:.1f}" stroke-linecap="square"/></g>')
     return f'<g class="bob"><g filter="url(#glow)">{win}</g>{bug}{lens}</g>'
+
+
+def pixel_cap(cx, cy, px=3.4):
+    W, H = 24, 14
+    ox, oy = cx - W * px / 2, cy - H * px / 2
+    cells = [(6, 5, 12, 8, "#a8467a")]  # the cap's base, drawn first so the board covers its top
+    for r, wd in enumerate([4, 8, 12, 16, 20, 16, 12, 8, 4]):  # the board, a stepped diamond
+        cells.append(((W - wd) / 2, r, wd, 1, PINK))
+    tassel = [(21, 4, 1, 7, AMBER), (20, 11, 3, 2, AMBER)]
+    return f'<g class="bob"><g filter="url(#glow)">{_px(ox, oy, px, cells)}</g>{_px(ox, oy, px, tassel)}</g>'
 
 
 # --------------------------------------------------------------------------- stack (big card)
@@ -543,7 +554,7 @@ def footer():
 
 
 def projects_title():
-    strip("projects", "the projects", "four things i build, one still in the oven")
+    strip("projects", "the projects", "five things i build, three still in the oven")
 
 
 # --------------------------------------------------------------------------- project cards
@@ -610,7 +621,7 @@ def projects():
     project("gotransit", 1, AMBER, "REAL-TIME TRANSIT · REGINA", "live" if up else "down",
             "GoTransit — live buses for Regina, SK", "react 19 · express 5 · supabase · google maps",
             [("a rider taps", ""), ("React 19", "map ui"), ("Express 5", "transit api"), ("the bus", "")],
-            [("commits", commits("GoTransit"), AMBER), ("last push", pushed("GoTransit"), TXT),
+            [("commits", commits("TransitRegina"), AMBER), ("last push", pushed("TransitRegina"), TXT),
              ("status", "live" if up else "down", GREEN if up else RED)],
             "live tracking every 1.5s · trip planning · admin analytics",
             lambda x, y: pixel_bus(x, y, 3.4),
@@ -644,8 +655,96 @@ def projects():
             pixel_code,
             [("READ DIFF", -90, VIOLET, ""), ("FIND BUGS", -18, RED, "now"), ("EXPLAIN", 54, CYAN, ""),
              ("SUGGEST FIX", 126, GREEN, ""), ("SECURITY", 198, AMBER, "")], building=True)
+    project("courseflow", 5, PINK, "UNIVERSITY NETWORK · PEER GUIDANCE", "building",
+            "CourseFlow — LinkedIn for students", "next.js 16 · typescript · tailwind · supabase",
+            [("a student", ""), ("Next.js 16", "dashboard ui"), ("Supabase", "auth · db · rls"), ("peers", "")],
+            [("commits", commits("courseflow"), PINK), ("last push", pushed("courseflow"), TXT),
+             ("status", "building", PINK)],
+            "verified anonymous reviews · semester stacks · live chat",
+            pixel_cap,
+            [("DASHBOARD", -90, AMBER, ""), ("REVIEWS", -18, GREEN, ""), ("CHAT", 54, CYAN, ""),
+             ("ROADMAP", 126, VIOLET, ""), ("STACKS", 198, PINK, "")], building=True)
 
 
-for f in (header, stack, loop, cells, meters, dots, projects_title, projects, footer):
+def also_built():
+    w, h = 420, 450
+    R = D["repos"]
+    items = [("Python-Graph", "python", CYAN, "python practice repo"),
+             ("Node.js", "javascript", YELLOW, "basic practice on node.js")]
+    known = [R[k]["commits"] for k, *_ in items if R[k]["commits"] is not None]
+    total = f"{sum(known)}{'+' if len(known) < len(items) else ''}" if known else "—"
+    b = panel(w, h, TEAL, "06")
+    b += card_head(w, "ALSO BUILT", TEAL, "SMALLER REPOS · PRACTICE REPS", f"{len(items)} repos",
+                   "Smaller builds, kept public", "python · javascript")
+    for i, (name, lang, col, desc) in enumerate(items):
+        y = 118 + i * 104
+        c = R[name]["commits"]
+        b += f'<rect x="18" y="{y}" width="{w-36}" height="92" rx="8" fill="#0d0f12" stroke="{LINE}"/>'
+        b += f'<rect x="18" y="{y+14}" width="3" height="64" fill="{col}"/>'
+        b += f'<text x="36" y="{y+30}" font-size="15" font-weight="800" fill="{TXT}">{esc(name)}</text>'
+        chip_svg, _ = chip(36, y + 52, lang, col, 7.5)
+        b += chip_svg
+        b += f'<text x="36" y="{y+74}" font-size="8.5" class="dim">{esc(desc)}</text>'
+        b += f'<text x="{w-34}" y="{y+40}" text-anchor="end" font-size="22" font-weight="800" fill="{col}">{"—" if c is None else f"{c:,}"}</text>'
+        b += f'<text x="{w-34}" y="{y+56}" text-anchor="end" font-size="8.5" class="dim">commits</text>'
+    b += f'<rect x="18" y="340" width="{w-36}" height="50" rx="6" fill="#0d0f12" stroke="{LINE}"/>'
+    for (lab, val, col), (x, anc) in zip([("repos", str(len(items)), TEAL), ("commits", total, TXT), ("status", "practice", TEAL)],
+                                         [(32, "start"), (w / 2, "middle"), (w - 32, "end")]):
+        b += f'<text x="{x}" y="358" text-anchor="{anc}" font-size="8.5" class="dim">{lab}</text>'
+        b += f'<text x="{x}" y="378" text-anchor="{anc}" font-size="14" font-weight="800" fill="{col}">{val}</text>'
+    b += footer_caption(w, h, "small repos, kept public for the record")
+    svg("also-built", w, h, b, title="Also built: Python-Graph and Node.js practice repos")
+
+
+def stats():
+    w, h = 840, 446
+    R = D["repos"]
+    up = D["site_live"]
+    cur, tot = D["phase_current"], D["phase_total"]
+    rv = R["AI-generate-code-reviewer"]
+    rows = [("GoTransit", "react 19 · express 5 · supabase", AMBER, "TransitRegina", "● live" if up else "● down", GREEN if up else RED),
+            ("CourseFlow", "next.js 16 · typescript · supabase", PINK, "courseflow", "● building", PINK),
+            ("dmarc-translate", "python · parsedmarc · sqlite · fastapi", CYAN, "dmarc-translate", f"phase {cur} / {tot}", CYAN),
+            ("AI-Finance", "next.js · prisma · supabase · gemini", GREEN, "AI-Finance", "built", GREEN),
+            ("AI code reviewer", "public repo" if rv["public"] else "not pushed yet", VIOLET,
+             "AI-generate-code-reviewer", "● building", VIOLET)]
+    css = """
+.bar{transform-box:fill-box;transform-origin:left;animation:grow 1.6s cubic-bezier(.2,.8,.2,1) both}
+@keyframes grow{from{transform:scaleX(0)}}
+"""
+    counts = [R[k]["commits"] if R[k]["public"] else None for *_, k, _, _ in rows]
+    top = max([c for c in counts if c] or [1])
+    b = panel(w, h, AMBER)
+    b += f'<text x="26" y="30" class="cap dim">PROJECT STATS · UPDATED {D["updated"]}</text>'
+    b += (f'<text x="26" y="62" font-size="20" font-weight="800" fill="{TXT}">the numbers behind '
+          f'<tspan fill="{AMBER}" filter="url(#glow)">the builds</tspan></text>')
+    for x, anc, t in [(300, "start", "COMMITS"), (640, "start", "STARS"), (w - 26, "end", "STATUS")]:
+        b += f'<text x="{x}" y="104" text-anchor="{anc}" class="cap dim" font-size="8">{t}</text>'
+    b += f'<line x1="26" y1="114" x2="{w-26}" y2="114" stroke="{LINE}"/>'
+    for i, ((name, sub, col, key, status, scol), c) in enumerate(zip(rows, counts)):
+        y = 130 + i * 52
+        b += f'<rect x="26" y="{y}" width="3" height="34" fill="{col}"/>'
+        b += f'<text x="40" y="{y+14}" font-size="12" font-weight="700" fill="{TXT}">{esc(name)}</text>'
+        b += f'<text x="40" y="{y+28}" font-size="8.5" class="dim">{esc(sub)}</text>'
+        if c:
+            b += f'<rect x="300" y="{y+10}" width="270" height="8" rx="4" fill="#1a1d22"/>'
+            b += (f'<rect class="bar" style="animation-delay:{.15+i*.12:.2f}s" x="300" y="{y+10}" '
+                  f'width="{max(4, 270*c/top):.1f}" height="8" rx="4" fill="{col}"/>')
+            b += f'<text x="586" y="{y+19}" font-size="12" font-weight="800" fill="{col}">{c:,}</text>'
+            b += f'<text x="640" y="{y+19}" font-size="12" fill="{TXT}">★ {R[key]["stars"]}</text>'
+        else:
+            b += f'<rect x="300" y="{y+10}" width="270" height="8" rx="4" fill="none" stroke="{col}" stroke-opacity=".7" stroke-dasharray="3 3"/>'
+            b += f'<text x="586" y="{y+19}" font-size="12" class="dim">—</text><text x="640" y="{y+19}" font-size="12" class="dim">—</text>'
+        b += f'<text x="{w-26}" y="{y+19}" text-anchor="end" font-size="11" font-weight="800" fill="{scol}">{esc(status)}</text>'
+    b += f'<line x1="26" y1="398" x2="{w-26}" y2="398" stroke="{LINE}"/>'
+    live_n = sum(1 for r in rows if r[4].endswith("live"))
+    b += f'<text x="26" y="424" class="cap dim" font-size="8">TOTAL</text>'
+    b += f'<text x="300" y="424" font-size="12.5" font-weight="800" fill="{TXT}">{sum(c for c in counts if c):,} commits</text>'
+    b += f'<text x="640" y="424" font-size="12.5" font-weight="800" fill="{TXT}">★ {sum(R[k]["stars"] for *_, k, _, _ in rows)}</text>'
+    b += f'<text x="{w-26}" y="424" text-anchor="end" font-size="9.5" class="dim">{len(rows)} projects · {live_n} live</text>'
+    svg("stats", w, h, b, css, "Project stats: commits, stars and status for each project")
+
+
+for f in (header, stack, loop, cells, meters, dots, projects_title, projects, also_built, stats, footer):
     f()
 print("built:", sorted(p.name for p in OUT.iterdir()))
