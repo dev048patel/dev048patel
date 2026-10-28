@@ -19,31 +19,24 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/dev048patel/courseflow">
-    <img src="./assets/proj-courseflow.svg" width="100%" alt="CourseFlow — LinkedIn for university students. Next.js 16, TypeScript, Tailwind and Supabase. 187 commits, 2 stars, building." />
-  </a>
+  <a href="https://github.com/dev048patel/courseflow"><img src="./assets/proj-courseflow.svg" width="49%" alt="CourseFlow — LinkedIn for students. Next.js 16, TypeScript, Tailwind and Supabase. Building." /></a>
+  <a href="https://github.com/dev048patel?tab=repositories"><img src="./assets/also-built.svg" width="49%" alt="Also built: Python-Graph and Node.js practice repos" /></a>
 </p>
 
 <p align="center">
   <a href="https://github.com/dev048patel?tab=repositories">
-    <img src="./assets/also-built.svg" width="100%" alt="Also built: Python-Graph and Node.js practice repos" />
+    <img src="./assets/stats.svg" width="100%" alt="Project stats: commits, stars and status for GoTransit, CourseFlow, dmarc-translate, AI-Finance and the AI code reviewer" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/dev048patel?tab=repositories">
-    <img src="./assets/stats.svg" width="100%" alt="Project stats: GoTransit 200 commits and live, CourseFlow 187 commits and building, dmarc-translate 9 commits at phase 2 of 5, AI-Finance 9 commits and built, AI code reviewer in progress. 405 commits and 6 stars in total." />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/dev048patel/GoTransit">
+  <a href="https://github.com/dev048patel/TransitRegina">
     <img src="./assets/stack.svg" width="100%" alt="One tap on GoTransit runs through React, Express and Supabase" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/dev048patel/GoTransit"><img src="./assets/loop.svg" width="49%" alt="GoTransit live-tracking loop" /></a>
+  <a href="https://github.com/dev048patel/TransitRegina"><img src="./assets/loop.svg" width="49%" alt="GoTransit live-tracking loop" /></a>
   <a href="https://github.com/dev048patel/dmarc-translate"><img src="./assets/cells.svg" width="49%" alt="dmarc-translate: 69 of 100 domains have no real DMARC" /></a>
 </p>
 
