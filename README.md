@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/projects.svg" width="100%" alt="the projects" />
+  <img src="./assets/projects.svg" width="100%" alt="the projects: five things i build, three still in the oven" />
 </p>
 
 <p align="center">
@@ -16,6 +16,24 @@
 <p align="center">
   <a href="https://github.com/dev048patel/AI-Finance"><img src="./assets/proj-ai-finance.svg" width="49%" alt="AI-Finance — your spending, explained" /></a>
   <a href="https://github.com/dev048patel"><img src="./assets/proj-code-reviewer.svg" width="49%" alt="AI code reviewer — building now" /></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/dev048patel/courseflow">
+    <img src="./assets/proj-courseflow.svg" width="100%" alt="CourseFlow — LinkedIn for university students. Next.js 16, TypeScript, Tailwind and Supabase. 187 commits, 2 stars, building." />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/dev048patel?tab=repositories">
+    <img src="./assets/also-built.svg" width="100%" alt="Also built: Python-Graph and Node.js practice repos" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/dev048patel?tab=repositories">
+    <img src="./assets/stats.svg" width="100%" alt="Project stats: GoTransit 116 commits and live, CourseFlow 187 commits and building, dmarc-translate 9 commits at phase 2 of 5, AI-Finance 9 commits and built, AI code reviewer in progress. 321 commits and 6 stars in total." />
+  </a>
 </p>
 
 <p align="center">
